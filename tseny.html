@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Цены на утепление эковатой и калькулятор | ВсепокрасимБел</title>
-<meta name="description" content="Прайс на утепление эковатой в Жодино и Минской области: стены, перекрытия, кровля. Онлайн-калькулятор стоимости по площади и толщине слоя.">
-<meta name="theme-color" content="#F4F1E6">
+<title>Цены на утепление эковатой в Жодино + калькулятор | ВсепокрасимБел</title>
+<meta name="description" content="Цены на утепление эковатой: перекрытие от 38 BYN/м², кровля от 44, каркасная стена от 40, готовый дом от 34. Онлайн-калькулятор по площади и толщине слоя.">
+<meta name="theme-color" content="#F7F3EA">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Цены и калькулятор — утепление эковатой | ВсепокрасимБел">
-<meta property="og:description" content="Ориентировочные цены за м² и онлайн-расчёт по площади и толщине слоя.">
+<meta property="og:description" content="Прайс за м² и расчёт по площади и толщине слоя.">
+<meta property="og:image" content="assets/img/machine.jpg">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +22,10 @@
   <div class="wrap head-in">
     <a class="brand" href="index.html" aria-label="ВсепокрасимБел — на главную">
       <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <rect x="1.25" y="1.25" width="37.5" height="37.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".8"/>
+        <rect x="1.25" y="1.25" width="37.5" height="37.5" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".8"/>
         <path d="M9 13h22" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
         <path d="M9 21c3.6-4.6 7.2-6.8 10.4-6.8 3 0 5 2 3.4 6.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M9 29.6c4.2-5.2 8.4-7.4 12.6-7.4" fill="none" stroke="#B8511F" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M9 29.6c4.2-5.2 8.4-7.4 12.6-7.4" fill="none" stroke="#B4522A" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
       <span class="brand-txt"><b>ВсепокрасимБел</b><em>эковата · Жодино</em></span>
     </a>
@@ -49,8 +50,8 @@
     <nav class="crumbs" aria-label="Хлебные крошки">
       <a href="index.html">Главная</a><span>/</span><span>Цены</span>
     </nav>
-    <h1>Цены и расчёт</h1>
-    <p class="lead">Ниже ориентировочные цены за м² с материалом и работой. Точную смету считаем после замера и фиксируем в договоре: доплат «по факту» не бывает.</p>
+    <h1>Считаем по объёму пустот, а не по площади дома</h1>
+    <p class="lead">Ниже цены за м² с материалом и работой. Финальную смету считаем после замера и фиксируем в договоре: доплат «по факту» не бывает.</p>
   </div>
 </section>
 
@@ -82,7 +83,7 @@
         </tbody>
       </table>
     </div>
-    <p class="small mt2">Цены указаны с материалом, плёнками и работой. Минимальный объём выезда — 300 BYN. Дальние выезды по Минской области — по договорённости.</p>
+    <p class="small mt2">Цены с материалом, плёнками и работой. Минимальный объём выезда — 300 BYN. Дальние выезды по Минской области — по договорённости.</p>
   </div>
 </section>
 
@@ -91,8 +92,8 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="sec-num">Калькулятор</div>
-        <h2>Предварительный расчёт</h2>
+        <p class="label">Калькулятор</p>
+        <h2>Посчитайте свой дом за минуту</h2>
       </div>
       <div>
         <p class="lead">Подставьте площадь и толщину слоя — получите вилку цены, объём материала и срок работы. Это ориентир, а не счёт.</p>
@@ -130,33 +131,37 @@
       </div>
 
       <div class="calc-out">
-        <p class="kicker">Ориентировочно</p>
+        <p class="label">Ориентировочно</p>
         <div class="calc-price" id="calc-price">— <small>BYN</small></div>
-        <p class="small" style="color:rgba(244,241,230,.55)">с материалом и работой</p>
+        <p class="small" style="color:rgba(247,243,234,.55)">с материалом и работой</p>
         <div class="calc-rows">
           <div><span class="k">Объём утеплителя</span><span class="v" id="calc-vol">0 м³</span></div>
           <div><span class="k">Масса материала</span><span class="v" id="calc-mat">0 кг</span></div>
           <div><span class="k">Срок работы</span><span class="v" id="calc-time">1 день</span></div>
         </div>
         <p class="calc-note">Расчёт не учитывает подмостья, сложные узлы и дальность выезда. Финальная цена фиксируется после замера.</p>
-        <a class="btn btn-inv mt2" href="tel:+375333355349">Уточнить по телефону</a>
+        <a class="btn btn-light mt2" href="tel:+375333355349">Уточнить по телефону</a>
       </div>
     </div>
   </div>
 </section>
 
 <section class="sec-tight">
-  <div class="wrap split">
+  <div class="wrap split split-wide">
     <div>
-      <div class="sec-num">От чего зависит цена</div>
-      <h2>Четыре вещи,<br>которые меняют смету</h2>
+      <p class="label">От чего зависит цена</p>
+      <h2>Четыре вещи, которые меняют смету</h2>
+      <p class="lead mt2">Одна и та же площадь может стоить по-разному. Вот почему мы не называем цену «за дом».</p>
+      <div class="ph ph-4x3 mt3">
+        <img src="assets/img/machine.jpg" alt="Задувочная машина с длинным шлангом на объекте" width="1024" height="1024" loading="lazy">
+      </div>
     </div>
     <div>
       <div class="grid g2">
-        <div class="card card-flat"><h4>Толщина слоя</h4><p class="small mt1">Главный фактор: 200 мм стоят почти вдвое дороже 100 мм, потому что материала нужно вдвое больше.</p></div>
-        <div class="card card-flat"><h4>Плотность задувки</h4><p class="small mt1">В стене материал держится плотнее, чем в горизонтальном перекрытии. Отсюда разная цена за м².</p></div>
-        <div class="card card-flat"><h4>Доступ к полостям</h4><p class="small mt1">Открытый каркас задувается быстрее, чем готовая стена, где нужно сверлить отверстия и потом их закрывать.</p></div>
-        <div class="card card-flat"><h4>Объём и этажность</h4><p class="small mt1">На объёмах от 150 м² цена за м² ниже. Второй этаж и высокие потолки — плюс к работе.</p></div>
+        <div class="card"><h4>Толщина слоя</h4><p class="small mt1">Главный фактор: 200 мм стоят почти вдвое дороже 100 мм, потому что материала нужно вдвое больше.</p></div>
+        <div class="card"><h4>Плотность задувки</h4><p class="small mt1">В стене материал держится плотнее, чем в горизонтальном перекрытии. Отсюда разная цена за м².</p></div>
+        <div class="card"><h4>Доступ к полостям</h4><p class="small mt1">Открытый каркас задувается быстрее, чем готовая стена, где нужно сверлить отверстия и потом их закрывать.</p></div>
+        <div class="card"><h4>Объём и этажность</h4><p class="small mt1">На объёмах от 150 м² цена за м² ниже. Второй этаж и высокие потолки — плюс к работе.</p></div>
       </div>
     </div>
   </div>
@@ -165,14 +170,15 @@
 <section class="sec-tight">
   <div class="wrap">
     <div class="cta rv">
+      <img src="assets/img/wall-cavity.jpg" alt="" width="1024" height="1024" loading="lazy" aria-hidden="true">
       <div class="cta-in">
         <div>
-          <h2>Назову цену<br>по телефону</h2>
-          <p>Достаточно площади и конструкции. Если сомневаетесь в толщине слоя — подскажу, сколько нужно для Минской области.</p>
+          <h2>Скажите площадь — назову цену сразу</h2>
+          <p>Достаточно площади и конструкции. Если сомневаетесь в толщине слоя, подскажу, сколько нужно для климата Минской области.</p>
         </div>
         <div class="cta-actions">
-          <a class="btn btn-inv" href="tel:+375333355349">+375 (33) 335-53-49</a>
-          <a class="btn btn-outline-inv" href="https://wa.me/375333355349" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-light" href="tel:+375333355349">+375 (33) 335-53-49</a>
+          <a class="btn btn-line-light" href="https://wa.me/375333355349" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
     </div>
@@ -184,11 +190,11 @@
     <div class="foot-top">
       <div>
         <a class="brand" href="index.html">
-          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" style="color:#F4F1E6">
-            <rect x="1.25" y="1.25" width="37.5" height="37.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" style="color:#F7F3EA">
+            <rect x="1.25" y="1.25" width="37.5" height="37.5" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
             <path d="M9 13h22" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
             <path d="M9 21c3.6-4.6 7.2-6.8 10.4-6.8 3 0 5 2 3.4 6.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M9 29.6c4.2-5.2 8.4-7.4 12.6-7.4" fill="none" stroke="#D9754A" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M9 29.6c4.2-5.2 8.4-7.4 12.6-7.4" fill="none" stroke="#D8C9A8" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
           <span class="brand-txt"><b>ВсепокрасимБел</b><em>эковата · Жодино</em></span>
         </a>
